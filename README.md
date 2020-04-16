@@ -1,7 +1,7 @@
 Hy my name is Riccardo, i'm 14 years old and i come from Italy. I started study CODE two years ago. 
 
-My first code language was BATCH, yah the window scripting language. I rember my first program in batch,
-it was a SUPERQUIZ like that a telvision program for exmple: Avanti Un Altro or The Wall (is an italian quiz). 
+My first programming language was BATCH, yah the Window scripting language. I rember my first program in batch,
+it was a SUPERQUIZ like that a telvision program for exmple: Avanti Un Altro or The Wall (an italians quiz). 
 After that i create an calculator and matrix efect, after put this tool in a only one program, 
 caled that THE MENU; in this program i started implement a mini video-games but i never finish write the code. 
 
