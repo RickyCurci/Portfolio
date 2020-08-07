@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADD</title>
+</head>
+<style type="text/css">
+	body, html { min-width: 100%; min-height: 100%; margin: 0; padding: 0; font: Arial 14px; text-align: center; background: #c4c400;}
+        #Content { min-height: 380px; min-width: 345px; border: 1px solid grey; margin: 0 auto; position: absolute; top: 50%; left: 49%; margin-top: -290px; margin-left: -170px; background: #c4c400;}
+          #Title { height: 100px; width: 345px; text-align: center;}
+          #Input { height: 150px; width: 345px; text-align: center; margin-top: 15.5px; }
+            input  { height: 20px; width: 250px; margin-top: 8px; font-size: 13px; color: grey}
+            #Search { height: 30px; width: 270px; margin-top: 18px; color: white; font-size: 11px; text-align: center; background:blue; border: 1px solid blue; border-radius: 2px; opacity: 0.4}
+            #Result { min-height: 100px; min-width: 345px; border: 1px solid grey; margin: 0 auto; position: absolute; top: 50%; left: 49%; margin-top: 200px; margin-left: -170px; background: #c4c400;}
+
+    </style>
+    
+  </head>
+  <body>
+    <!-- CONTENT -->
+    <div id= "Content">
+      
+      <!-- TITLE -->
+      <div id= "Title"><br>
+        <h1> Search </h1>
+        
+       </div> 
+      <!-- INPUT -->
+      <div id= "Input">
+        <form method="post" action="input.php">
+          
+          <!-- DATA -->
+          <input type="text" name="Code" value="Code"> 
+    
+          <!-- SENT INFO -->
+          <input type="submit" id="Search" name="submit" value="Search">
+        
+          <div id="Result">
+
+
+
+          </div>
+        </form>
+
+      </div>
+</body>
+</html>

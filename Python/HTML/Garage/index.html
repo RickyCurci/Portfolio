@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GARAGE</title>
+	<script type="text/javascript">
+	
+	var CARS = {
+
+		GB402RC: {
+
+			MARK: "Aston-Martin",
+			MODEL: "Valkyrie",
+
+			POSITION: "1[01]",
+			CODE: 162409060605,
+		},
+
+		FX305ZS: {
+
+			MARK: "	Ferrari",
+			MODEL: "488 Pista",
+
+			POSISTION: "1[03]",
+			CODE: 162456560605,
+		}
+	}
+
+	var Search = document.querySelector('#Search-Table').name;
+	function innerHTML() {
+
+		return document.querySelector('#Result-MARK').innerHTML = CARS.GB402RC.MARK;
+		return document.querySelector('#Result-MODEL').innerHTML = CARS.GB402RC.MODEL;
+		return document.querySelector('#Result-POSITION').innerHTML = CARS.GB402RC.POSITION;
+		return document.querySelector('#Result-CODE').innerHTML = CARS.GB402RC.CODE;
+			
+	}
+
+	function Cerca() {
+
+		if (Search = "GB402RC") {
+
+			innerHTML()
+			
+		}
+	}
+
+	console.log("CISONO")
+
+	</script>
+	<style type="text/css">
+
+	body {
+
+		background: black;
+
+		color: white;
+		font-size: 30px;
+
+	}
+
+	h1 {
+
+		font-size: 100px;
+	}
+
+	#Search-Table {
+
+		min-width: 80%;
+		min-height: 80%;
+
+		border: 10px solid white;
+		border-radius: 10px;
+
+	}
+
+	#Search-Button {
+
+		background: grey;
+
+		min-width: 15%;
+		min-height: 80%;
+
+		border: 10px solid grey;
+		border-radius: 10px;
+
+	}
+
+	#Result-MARK {
+
+		background: grey;
+
+		min-width: 10%;
+		min-height: 10%;
+
+		border: 10px solid grey;
+		border-radius: 10px;
+
+
+	}
+
+
+	#Result-MODEL {
+
+		background: grey;
+
+		min-width: 10%;
+		min-height: 10%;
+
+		border: 10px solid grey;
+		border-radius: 10px;
+
+
+	}
+
+
+	#Result-POSITION {
+
+		background: grey;
+
+		min-width: 10%;
+		min-height: 10%;
+
+		border: 10px solid grey;
+		border-radius: 10px;
+
+
+	}
+
+
+	#Result-CODE {
+
+		background: grey;
+
+		min-width: 10%;
+		min-height: 10%;
+
+		border: 10px solid grey;
+		border-radius: 10px;
+
+
+	}
+	</style>
+
+</head>
+<body>
+	<font face= "Courier New, Courier, mono" color= "white">
+		<center>
+		
+			<h1>GARAGE</h1>	
+		
+		</center>
+		<input type="te" name="ID" id="Search-Table">
+		<button onclick="Cerca()" id="Search-Button"><font face= "Courier New, Courier, mono" color= "black">Search</font></button><br><br>
+		<div id="Result-MARK">
+			<font face= "Courier New, Courier, mono" color= "black">
+				MARK:
+			</font> 
+		</div>
+		<br><br>
+		<div id="Result-MODEL">
+			<font face= "Courier New, Courier, mono" color= "black">
+				MODEL:
+			</font> 
+		</div>
+		<br><br>
+		<div id="Result-POSITION">
+			<font face= "Courier New, Courier, mono" color= "black">
+				POSITION:
+			</font> 
+		</div>
+		<br><br>
+		<div id="Result-CODE">
+			<font face= "Courier New, Courier, mono" color= "black">
+				CODE:
+			</font> 
+		</div>
+	</font>
+</body>
+</html>
