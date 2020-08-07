@@ -1,7 +1,0 @@
-User-agent: *
-
-Disallow: /Garage/
-Disallow: /Instagram/
-Disallow: /Portfolio/
-Disallow: /Yves_Rocher/
-
