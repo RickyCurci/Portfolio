@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #?access_key=fffc5f34895f627679275099f64cf727
 import requests
 import json
