@@ -1,11 +1,31 @@
 #!/usr/bin/python
+
 import requests;
 import time;
 import json;
 
+city = 'Carugate'
+Prompt = '''
+____________________________
+|         FAVOURITE         |
+----------------------------|
+|                           |
+|   [ CARUGATE  ]  { 1 }    |
+|   [ CUPERTINO ]  { 2 }    |
+|   [ NEW YORK  ]  { 3 }    |
+|   [ REYKJAVIK ]  { 4 }    |
+|                           |
+|___________________________|
 
-city = 'Pietra Ligure'
-def get_req(city):
+'''
+print(Prompt)
+Selector = input('>')
+
+if Selector == '1':
+    city = 'Carugate'
+
+
+def get_req():
 
     response = requests.get('https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=921022f05a78a4b5bfe92af06dcd11d5')
 
@@ -39,4 +59,4 @@ def get_req(city):
         print(' ')
     Interface()
 
-get_req(city)
+get_req()
