@@ -1,0 +1,155 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{25, 35}, {270, 41}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "F395A23F-E781-49B0-8EBC-2E5C4052D1B7",
+          "corner_radius" : 10,
+          "frame" : "{{60, 224}, {200, 32}}",
+          "border_width" : 0,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "action" : "ui.TextField",
+          "text" : "Site",
+          "font_name" : "AppleSDGothicNeo-Bold",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "Site",
+          "font_size" : 17
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{25, 98}, {270, 41}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "6FB4BE6A-9433-4B72-8DE2-4ED28465B199",
+          "corner_radius" : 10,
+          "background_color" : "RGBA(0.011792,0.011792,0.011792,1.000000)",
+          "frame" : "{{120, 224}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "title" : "SEARCH",
+          "action" : "ui.Button",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "Search",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{25, 163}, {66, 35}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "92A20C65-C3AF-41EC-BE20-AF5BB9B4C794",
+          "background_color" : "RGBA(0.101961,0.101961,0.101961,1.000000)",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "number_of_lines" : 0,
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "alignment" : "left",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "User: ",
+          "font_name" : "AvenirNext-Heavy",
+          "class" : "Label",
+          "name" : "Label",
+          "font_size" : 18
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{25, 206}, {270, 41}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "CA44DE07-B918-4E54-8ED7-529707A34145",
+          "corner_radius" : 10,
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "number_of_lines" : 2,
+          "border_width" : 0,
+          "alignment" : "center",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "User",
+          "font_name" : "<System>",
+          "class" : "Label",
+          "name" : "User",
+          "font_size" : 18
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{25, 255}, {107, 35}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "92A20C65-C3AF-41EC-BE20-AF5BB9B4C794",
+          "background_color" : "RGBA(0.101961,0.101961,0.101961,1.000000)",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "number_of_lines" : 0,
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "alignment" : "left",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "Password: ",
+          "font_name" : "AvenirNext-Heavy",
+          "class" : "Label",
+          "name" : "Label",
+          "font_size" : 18
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{25, 298}, {270, 41}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "CA44DE07-B918-4E54-8ED7-529707A34145",
+          "flex" : "WLRT",
+          "corner_radius" : 10,
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "number_of_lines" : 2,
+          "border_width" : 0,
+          "alignment" : "center",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "Password",
+          "alpha" : 1,
+          "font_name" : "<System>",
+          "class" : "Label",
+          "name" : "Password",
+          "font_size" : 18
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(1.000000,0.989583,0.968750,1.000000)",
+      "custom_class" : "",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(0.101961,0.101961,0.101961,1.000000)",
+      "name" : "SECURE"
+    },
+    "selected" : false
+  }
+]
