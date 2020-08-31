@@ -1,11 +1,13 @@
-from random import * 
-BatteryLevel = randint(0,100) 
+#!/usr/bin/python
+
+from random import *
+BatteryLevel = randint(0,100)
 
 
 airpods = randint(0,1)
 airpodsID = "iPhone di RICCARDINO"
 if airpods == 0:
-	airpods = True 
+	airpods = True
 elif airpods == 1:
 	airpods = False
 
@@ -20,27 +22,27 @@ class Airpods:
 		if time == 5 and airpods == True:
 			Light = "white"
 			return Light
-			
-		elif time == 1: 
-			if BatteryLevel <= 50: 
+
+		elif time == 1:
+			if BatteryLevel <= 50:
 				Light = "red"
-			else: 
+			else:
 				Light = "green"
 			return Light
 		else:
 			return "ERROR"
-	
+
 	def Connection():
 		if phoneDistance <= 5 and phone == True and phoneID == airpodsID:
-			connection = True, phoneID 
+			connection = True, phoneID
 			return connection
-		else: 
+		else:
 			return "ERROR"
-			 
+
 led = Airpods.Press(1)
 connection = Airpods.Connection()
 if connection == "ERROR":
 	print("STATUS (",airpods,")","LED (",led,")","CONNECTION (",connection,")")
 else:
 	print("STATUS (",airpods,")","LED (",led,")","CONNECTION",connection,"")
-# MODIFICARE IL PROTOCOLLO IPHONE DI CONNESSIONE 
+# MODIFICARE IL PROTOCOLLO IPHONE DI CONNESSIONE

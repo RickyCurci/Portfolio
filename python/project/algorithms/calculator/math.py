@@ -1,6 +1,9 @@
+#!/usr/bin/python
+
 import os
-class Matematica: 
-	def __init__(self,Teoria,Esercizi_in_classe,Esercizi_a_casa): 
+
+class Matematica:
+	def __init__(self,Teoria,Esercizi_in_classe,Esercizi_a_casa):
 		self.Teoria = Teoria
 		self.Esercizi_in_classe = Esercizi_in_classe
 		self.Esercizi_a_casa = Esercizi_a_casa
@@ -25,7 +28,7 @@ TotalArguments = [
 	ArgumentsList[4],
 	ArgumentsList[5]
 	]
-#Script UI  
+#Script UI
 Homepage = """
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 |||  _   _   ____ _____  _____  _   _    ____ _____    _____  ____    |||
@@ -34,7 +37,7 @@ Homepage = """
 |||                                                                   |||
 ||| In this shell you can see a position of math arguments in the     |||
 ||| database. Just enter the of the arguments when you will be asked  |||
-|||                                                                   |||             
+|||                                                                   |||
 ||| Enter:                                                            |||
 ||| [ 1 ] to continue                                                 |||
 ||| [ 0 ] to exit                                                     |||
@@ -49,17 +52,17 @@ Secondpage = """
 ||| Enter:                                                            |||
 ||| [ 2 ] to serch the arguments position in a database               |||
 ||| [ 1 ] to show the list of arguments                               |||
-||| [ 0 ] to exit                                                     |||     
+||| [ 0 ] to exit                                                     |||
 |||                                                                   |||
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 """
 Thirdpage = """
-Homepage/Secondpage/Thirdpage                                    
-Enter the correct and complite name of the arguments: 
+Homepage/Secondpage/Thirdpage
+Enter the correct and complite name of the arguments:
 """
 print(Homepage)
-#Homepage Logic UI 
+#Homepage Logic UI
 HomepageSupport = ["0","1"]
 HomePageLabel = input("Enter an parameter -->")
 if HomePageLabel == HomepageSupport[1]:

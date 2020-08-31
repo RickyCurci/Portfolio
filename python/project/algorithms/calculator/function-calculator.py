@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import numpy as np
 import pylab as pl
 
@@ -10,11 +12,7 @@ for i in x:
 	f = ((1/4) * (4/1))*(x[i]**3)
 	y.append(f)
 
-print(x,y)	 
+print(x,y)
 
 pl.plot(x,y)
 pl.show()
-
-
-
-
