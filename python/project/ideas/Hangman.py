@@ -13,46 +13,47 @@ word = [words[int(i)] for i in range(0, len(words))]
 for i in range(0, len(word)):
     guessing_letter.append('_')
 
-
+Y = 0
 def guessing():
 
     X = input("Guessing Word: ")
 
-    for i in range(0, len(man)):
-        for letter in word:
+    for letter in word:
 
-            if letter == X:
-                for i in range(-1, 3):
+        if letter == X:
+            for i in range(-1, 3):
 
-                    position = word.index(letter)
-                    guessing_letter[position] = letter
+                position = word.index(letter)
+                guessing_letter[position] = letter
 
-                    word[position] = '*'
+                word[position] = '*'
 
-                    if letter not in word:
-                        break
-
-                printer()
-                print(' ')
-                print(guessing_letter)
-
-                guessing_word = ''.join(str(i) for i in guessing_letter)
-                if guessing_word == words:
-                    print('============================')
-                    print(' ')
-                    print('You win the match!')
-
+                if letter not in word:
                     break
 
-                guessing()
+            printer()
+            print(' ')
+            print(guessing_letter)
 
-            elif letter != word:
-                base[i + 2] = man[i]
-                i = i + 1
+            guessing_word = ''.join(str(i) for i in guessing_letter)
+            if guessing_word == words:
+                print('============================')
+                print(' ')
+                print('You win the match!')
 
-                printer()
-                print(guessing_letter)
-                guessing()
+                break
+
+            guessing()
+
+        elif letter != word:
+
+            base[Y + 2] = man[Y]
+            Y = Y + 1
+
+            printer()
+            print(guessing_letter)
+            guessing()
+
 
 
 
