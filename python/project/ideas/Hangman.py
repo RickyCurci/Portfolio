@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 from random import *
+
 words = [ 'riccardo', 'aereodinamic', 'train', 'love', 'ferrari']
 guessing_letter = []
 
-base = ['+--+', '|  |   ', '   |   ', '   |   ', '   |   ', '======']
-man = [ 'O  |   ', '  /|   ', '  /|\\ ']
+base = [' +--+ ',   ' |  |   ', '    |   ', '    |   ', '    |   ', ' ======']
+man =  [' O  |   ', '/|  |', '/|\\|', '/|  |''/|\\|']
 
 words = words[randint(0, len(words))]
 word = [words[int(i)] for i in range(0, len(words))]
-print(word)
-
 
 for i in range(0, len(word)):
     guessing_letter.append('_')
@@ -19,28 +18,44 @@ def guessing():
 
     X = input("Guessing Word: ")
 
-    for letter in word:
+    for i in range(0, len(man)):
+        for letter in word:
 
-        if letter == X:
-            for i in range(-1, 3):
-                position = word.index(letter)
-                guessing_letter[position] = letter
-                word.remove(letter)
-                word[position] = '*'
-                print(word[position])
-                if letter not in word:
+            if letter == X:
+                for i in range(-1, 3):
+
+                    position = word.index(letter)
+                    guessing_letter[position] = letter
+
+                    word[position] = '*'
+
+                    if letter not in word:
+                        break
+
+                printer()
+                print(' ')
+                print(guessing_letter)
+
+                guessing_word = ''.join(str(i) for i in guessing_letter)
+                if guessing_word == words:
+                    print('============================')
+                    print(' ')
+                    print('You win the match!')
+
                     break
 
-            printer()
-            print(' ')
-            print(guessing_letter)
-            guessing()
+                guessing()
 
-            if guessing_letter == word:
-                print(' ')
-                print('============================')
-                print(' ')
-                print('you win the match')
+            elif letter != word:
+                base[i + 2] = man[i]
+                i = i + 1
+
+                printer()
+                print(guessing_letter)
+                guessing()
+
+
+
 
 def printer():
     for i in range(0,len(base)):
