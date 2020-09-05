@@ -13,9 +13,9 @@ word = [words[int(i)] for i in range(0, len(words))]
 for i in range(0, len(word)):
     guessing_letter.append('_')
 
-Y = 0
-def guessing():
 
+def guessing():
+    
     X = input("Guessing Word: ")
 
     for letter in word:
