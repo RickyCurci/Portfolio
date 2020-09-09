@@ -5,7 +5,9 @@ words = [ 'riccardo', 'aereodinamic', 'train', 'love', 'ferrari']
 guessing_letter = []
 
 base = [' +--+ ',   ' |  |   ', '    |   ', '    |   ', '    |   ', ' ======']
-man =  [' O  |   ', '/|  |', '/|\\|', '/|  |''/|\\|']
+man =  [' O  |   ', '/|  |', '/|\ |', '/   |', '/ \ |']
+
+life = list(range(0, len(man)))
 
 words = words[randint(0, len(words))]
 word = [words[int(i)] for i in range(0, len(words))]
@@ -17,8 +19,9 @@ for i in range(0, len(word)):
 def guessing():
     
     X = input("Guessing Word: ")
-
-    for letter in word:
+    
+    for i in life: 
+      for letter in word:
 
         if letter == X:
             for i in range(-1, 3):
@@ -47,10 +50,16 @@ def guessing():
 
         elif letter != word:
 
-            base[Y + 2] = man[Y]
-            Y = Y + 1
-
-            printer()
+            base[i + 2] = man[i]
+            
+            if i == 2 and base[3] == man[1]:
+              base[3] = man[2]
+              
+            elif i == 4 and base[4] == man[3]:
+              base[4] = man[4]
+              
+            life.remove(i) 
+            printer() 
             print(guessing_letter)
             guessing()
 
