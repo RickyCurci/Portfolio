@@ -6,6 +6,10 @@ guessing_letter = []
 
 base = [' +--+ ',   ' |  |   ', '    |   ', '    |   ', '    |   ', ' ======']
 man =  [' O  |   ', '/|  |', '/|\ |', '/   |', '/ \ |']
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87b15c1bb4d021de63f80d08d7d2f6db6f1ede82
 life = list(range(0, len(man)))
 
 words = words[randint(0, len(words))]
@@ -18,12 +22,18 @@ for i in range(0, len(word)):
 def guessing():
 
     X = input("Guessing Word: ")
+<<<<<<< HEAD
 
     for i in life:
         for letter in word:
 
             if letter == X:
                 for i in range(-1, 3):
+=======
+    
+    for i in life: 
+      for letter in word:
+>>>>>>> 87b15c1bb4d021de63f80d08d7d2f6db6f1ede82
 
                     position = word.index(letter)
                     guessing_letter[position] = letter
@@ -63,7 +73,22 @@ def guessing():
                 print(guessing_letter)
                 guessing()
 
+<<<<<<< HEAD
 
+=======
+            base[i + 2] = man[i]
+            
+            if i == 2 and base[3] == man[1]:
+              base[3] = man[2]
+              
+            elif i == 4 and base[4] == man[3]:
+              base[4] = man[4]
+              
+            life.remove(i) 
+            printer() 
+            print(guessing_letter)
+            guessing()
+>>>>>>> 87b15c1bb4d021de63f80d08d7d2f6db6f1ede82
 
 
 
