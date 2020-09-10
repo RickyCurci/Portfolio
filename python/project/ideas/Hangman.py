@@ -6,10 +6,7 @@ guessing_letter = []
 
 base = [' +--+ ',   ' |  |   ', '    |   ', '    |   ', '    |   ', ' ======']
 man =  [' O  |   ', '/|  |', '/|\ |', '/   |', '/ \ |']
-<<<<<<< HEAD
-=======
 
->>>>>>> 87b15c1bb4d021de63f80d08d7d2f6db6f1ede82
 life = list(range(0, len(man)))
 
 words = words[randint(0, len(words))]
@@ -22,73 +19,52 @@ for i in range(0, len(word)):
 def guessing():
 
     X = input("Guessing Word: ")
-<<<<<<< HEAD
 
     for i in life:
-        for letter in word:
-
-            if letter == X:
-                for i in range(-1, 3):
-=======
-    
-    for i in life: 
       for letter in word:
->>>>>>> 87b15c1bb4d021de63f80d08d7d2f6db6f1ede82
 
-                    position = word.index(letter)
-                    guessing_letter[position] = letter
+        if letter == X:
+            for i in range(-1, 3):
 
-                    word[position] = '*'
+                position = word.index(letter)
+                guessing_letter[position] = letter
 
-                    if letter not in word:
-                        break
+                word[position] = '*'
 
-                printer()
-                print(' ')
-                print(guessing_letter)
-
-                guessing_word = ''.join(str(i) for i in guessing_letter)
-                if guessing_word == words:
-                    print('============================')
-                    print(' ')
-                    print('You win the match!')
-
+                if letter not in word:
                     break
 
-                guessing()
+            printer()
+            print(' ')
+            print(guessing_letter)
 
+            guessing_word = ''.join(str(i) for i in guessing_letter)
+            if guessing_word == words:
+                print('============================')
+                print(' ')
+                print('You win the match!')
 
-            elif letter != word:
-                print(i)
-                base[i + 2] = man[i]
-                life.remove(i)
+                break
 
-                if base[3] == man[1]:
-                    base[3] = man[2]
+            guessing()
 
-                if  base[4] == man[3]:
-                    base[4] = man[4]
+        elif letter != word:
 
-                printer()
-                print(guessing_letter)
-                guessing()
-
-<<<<<<< HEAD
-
-=======
             base[i + 2] = man[i]
-            
+
             if i == 2 and base[3] == man[1]:
               base[3] = man[2]
-              
+              life.remove(i)
+
             elif i == 4 and base[4] == man[3]:
               base[4] = man[4]
-              
-            life.remove(i) 
-            printer() 
+              life.remove(i)
+
+            else:
+              life.remove(i)
+            printer()
             print(guessing_letter)
             guessing()
->>>>>>> 87b15c1bb4d021de63f80d08d7d2f6db6f1ede82
 
 
 
