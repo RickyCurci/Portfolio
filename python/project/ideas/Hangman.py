@@ -62,6 +62,7 @@ def guessing():
 
             else:
               life.remove(i)
+
             printer()
             print(guessing_letter)
             guessing()
