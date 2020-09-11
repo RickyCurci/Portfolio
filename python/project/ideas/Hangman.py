@@ -9,7 +9,7 @@ man =  [' O  |   ', '/|  |', '/|\ |', '/   |', '/ \ |']
 
 life = list(range(0, len(man)))
 
-words = words[randint(0, len(words))]
+words = words[randint(0, len(words) -1)]
 word = [words[int(i)] for i in range(0, len(words))]
 
 for i in range(0, len(word)):
@@ -38,6 +38,7 @@ def guessing():
             print(' ')
             print(guessing_letter)
 
+
             guessing_word = ''.join(str(i) for i in guessing_letter)
             if guessing_word == words:
                 print('============================')
@@ -48,7 +49,7 @@ def guessing():
 
             guessing()
 
-        elif letter != word:
+        elif letter != X:
 
             base[i + 2] = man[i]
 
@@ -62,8 +63,10 @@ def guessing():
 
             else:
               life.remove(i)
+
             printer()
             print(guessing_letter)
+
             guessing()
 
 
