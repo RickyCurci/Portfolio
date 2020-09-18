@@ -47,7 +47,7 @@ def guessing():
 
                 break
 
-            guessing()
+
 
         elif letter != X:
 
@@ -61,15 +61,14 @@ def guessing():
               base[4] = man[4]
               life.remove(i)
 
-            else:
-              life.remove(i)
-
             printer()
             print(guessing_letter)
 
-            guessing()
 
+            if  base == [base[0], base[1], man[0], man[2], man[4], base[5]]:
+                break
 
+        X = input('Guesing WOrd: ')
 
 
 
