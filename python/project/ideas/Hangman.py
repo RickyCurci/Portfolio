@@ -61,6 +61,12 @@ def guessing():
               base[4] = man[4]
               life.remove(i)
 
+<<<<<<< HEAD
+=======
+            else:
+              life.remove(i)
+
+>>>>>>> 5d2f33b6dcb7d4b20eb2db7c1a4b59ddcc667d39
             printer()
             print(guessing_letter)
 
